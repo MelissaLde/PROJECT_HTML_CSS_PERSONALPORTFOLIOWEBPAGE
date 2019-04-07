@@ -1,0 +1,195 @@
+* {
+	font-family: 'Questrial', sans-serif;
+}
+
+#welcome-section {
+	height: 100vh;
+}
+
+#navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: white;
+}
+
+nav>ul {
+	display: flex;
+	justify-content: flex-end;
+	padding: 0;
+}
+
+nav>ul>li {
+	padding: 0.1% 3%;
+	list-style: none;
+}
+
+nav>ul>li>a {
+	text-decoration: none;
+	font-weight: bold;
+	color: rgba(252, 143, 161, 0.945);
+	text-transform: uppercase;
+}
+
+nav>ul>li>a:hover {
+	color: black;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	background-image: url("https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#header-text {
+	color: black;
+	align-self: center;
+	text-align: center;
+}
+
+#projects {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 50px;
+	max-width: 95%;
+	margin: 0 auto;
+	justify-items: center;
+}
+
+.col-4 {
+	grid-column: span 4;
+}
+
+.project-tile {
+	box-shadow: 1px 1px 5px lightgrey;
+	width: 330px;
+	height: 490px;
+	border: 1px solid lightgrey;
+	text-align: center;
+	padding: 10px;
+}
+
+.profile-link {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.tile-img {
+	height: 90%;
+	width: 100%;
+	margin: auto;
+	margin-bottom: 4%;
+}
+
+h1 {
+	text-align: center;
+	padding: 10% 0 5% 0;
+}
+
+#name {
+	font-family: 'Bree Serif', sans-serif;
+	text-transform: uppercase;
+	font-size: 2rem;
+	letter-spacing: 5px;
+}
+
+#job {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1rem;
+}
+
+button {
+	background: white;
+	border: 2px solid #ffc0cb;
+	border-radius: 7px;
+	color: pink;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-size: 16px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+button:hover {
+	background: pink;
+	color: white;
+}
+
+footer {
+	background: pink;
+}
+
+#copyright {
+	background: black;
+	color: white;
+	padding: 0.5px;
+	line-height: 70px;
+	text-align: center;
+	border-top: 15px solid #303030;
+}
+
+#network {
+	text-align: center;
+	padding-top: 0.2%;
+}
+
+#social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: center;
+	margin: 3%;
+}
+
+#social>a {
+	border-radius: 100%;
+	border: 2px solid pink;
+	line-height: 100px;
+	width: 100px;
+	height: 100px;
+	font-weight: bold;
+	text-decoration: none;
+	background: white;
+	color: black;
+	margin: 2%;
+}
+
+#social>a:hover {
+	color: pink;
+}
+
+#see-all {
+	text-align: center;
+	margin: 5% 0 10% 0;
+}
+
+@media screen and (max-width: 800px) {
+	nav>ul {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		height: 100px;
+	}
+	#navbar {
+		position: absolute;
+		top: 0;
+	}
+	nav>ul>li {
+		padding: 10px 0;
+	}
+	header {
+		padding-top: 15%;
+	}
+	.col-4 {
+		grid-column: span 10;
+	}
+	#see-all {
+		text-align: center;
+		padding: 10% 0;
+	}
+}
